@@ -1,0 +1,19 @@
+<article>
+    <% include ../template/header.ejs %>
+    <% include speakerslist.ejs %>
+    <section class="layout">
+        <div class="primary">
+            <% include whoarewe.ejs %>
+            <% include getbusy.ejs %>
+            <% include whoshouldcome.ejs %>
+        </div> <!-- primary -->
+
+        <aside class="secondary">
+            <% include nextmeeting.ejs %>
+            <% include artworklist.ejs %>
+        </aside> <!-- secondary -->
+    </section>
+
+    <% include ../template/footer.ejs %>
+    <% include ../template/jsdefaults.ejs %>
+</article>
