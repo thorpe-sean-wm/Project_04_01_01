@@ -1,0 +1,42 @@
+<!--
+1. Enable Angular JS Support
+
+2. Enable ng-app
+    -Structure
+    -Working
+
+** EJS has seperate routing from angular, EJS only routes us to our homepage and thats it angular does all the other pages.
+
+3. Implement ng-view for the Homepage
+
+4. Implement details for the swapped page so it will hold all of those little includes
+
+5. Deal with Speakers list
+
+6. Implement Speakers page
+
+7. Implement Details Link
+ -->
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <% include partials/template/head.ejs %>
+    </head>
+    <body class="<%= page %>">
+        <% include partials/template/header.ejs %>
+        <section class="layout">
+            <div ng-view class="primary">
+            </div>
+            <aside class="secondary">
+                <% include partials/content/nextMeeting.ejs %>
+                <% include partials/content/socialMedia.ejs %>
+                <% include partials/content/artworkList.ejs %>
+            </aside>
+        </section>
+
+
+        <% include partials/template/footer.ejs %>
+        <% include partials/template/jsdefaults.ejs %>
+    </body>
+</html>
