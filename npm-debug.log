@@ -7,7 +7,7 @@
 4 verbose config Skipping project config: /Users/session1/.npmrc. (matches userconfig)
 5 verbose stack Error: ENOENT: no such file or directory, open '/Users/session1/package.json'
 5 verbose stack     at Error (native)
-6 verbose cwd /Users/session1/PhpstormProjects/Second Semester/Exercise_04/Project_04_01_01
+6 verbose cwd /Users/session1/PhpstormProjects/Project_04_01_01
 7 error Darwin 14.4.0
 8 error argv "/Users/session1/.nvm/versions/node/v6.9.1/bin/node" "/Users/session1/.nvm/versions/node/v6.9.1/bin/npm" "start"
 9 error node v6.9.1

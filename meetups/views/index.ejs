@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <% include partials/template/head.ejs %>
+    </head>
+    <body class="<%= page %>">
+        <% include partials/template/header.ejs %>
+        <section class="layout">
+            <div ng-view class="primary">
+            </div>
+            <aside class="secondary">
+                <% include partials/content/nextmeeting.ejs %>
+                <% include partials/content/socialmedia.ejs %>
+                <% include partials/content/artworklist.ejs %>
+            </aside>
+        </section>
+
+
+        <% include partials/template/footer.ejs %>
+        <% include partials/template/jsdefaults.ejs %>
+    </body>
+</html>

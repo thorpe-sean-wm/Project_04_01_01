@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp', [
     'ngRoute',
-    'artistControllers',
-    'ngSanitize'
+    'ngSanitize',
+    'artistControllers'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider){
@@ -9,15 +9,15 @@ myApp.config(['$routeProvider', function($routeProvider){
 
     .when('/home', {
         templateUrl: 'partials/home.ejs',
-        controller: 'listControllerHome'
+        controller: 'HomeController'
     })
     .when('/speakers', {
         templateUrl: 'partials/speakers.ejs',
-        controller: 'listControllerSpeakers'
+        controller: 'SpeakersController'
     })
     .when('/speakers/:speakerid', {
         templateUrl: 'partials/speakers.ejs',
-        controller: 'listControllerDetails'
+        controller: 'DetailsController'
     })
     .otherwise({
         redirectTo: '/home'
